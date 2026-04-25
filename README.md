@@ -5,15 +5,19 @@
 ### Project Overview
 A complete 3-tier distributed system showcasing horizontal sharding using Vitess.
 
-| Layer            | Technology      | Port            |
-|------------------|-----------------|-----------------|
-| **Frontend**     | React           | 3000            |
-| **Backend API**  | Python Flask    | 5000            |
-| **Query Router** | Vitess VTGate   | 15306           |
-| **Tablets**      | vttablet x2     | 15100, 15101    |
-| **Database**     | MySQL 8.0 x2    | 3306, 3307      |
-| **Topology**     | etcd            | 2379            |
-| **Manager**      | vtctld          | 15000           |
+<div align="center">
+
+| Layer | Technology | Port |
+|:-----:|:----------:|:----:|
+| **Frontend** | React | 3000 |
+| **Backend API** | Python Flask | 5000 |
+| **Query Router** | Vitess VTGate | 15306 |
+| **Tablets** | vttablet x2 | 15100, 15101 |
+| **Database** | MySQL 8.0 x2 | 3306, 3307 |
+| **Topology** | etcd | 2379 |
+| **Manager** | vtctld | 15000 |
+
+</div>
 
 ### Architecture
 Browser (React :3000) -> Flask API (:5000) -> VTGate (:15306) -> [Shard 0 (:3306) + Shard 1 (:3307)]
