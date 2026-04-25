@@ -1,0 +1,14 @@
+[mysqld]
+port = 3307
+bind-address = 127.0.0.1
+datadir = /var/lib/vitess_shard1
+socket = /var/lib/vitess_shard1/mysql.sock
+pid-file = /var/lib/vitess_shard1/mysql.pid
+log-error = /var/lib/vitess_shard1/error.log
+server-id = 2
+binlog_format = ROW
+log-bin = /var/lib/vitess_shard1/mysql-bin
+gtid_mode = ON
+enforce_gtid_consistency = ON
+innodb_buffer_pool_size = 256M
+innodb_log_file_size = 64M
