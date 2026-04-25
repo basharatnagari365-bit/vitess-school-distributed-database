@@ -28,4 +28,4 @@ Browser (React :3000) -> Flask API (:5000) -> VTGate (:15306) -> [Shard 0 (:3306
 - MySQL-compatible - standard SQL works
 
 ### Author
-Basharat Hussain - Distributed Systems Project
+Basharat Hussain, Syed Waqas Imam, Sajad Ali - Distributed Systems Project
